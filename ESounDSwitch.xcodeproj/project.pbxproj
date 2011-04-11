@@ -1,0 +1,306 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B4E1145B1330137E00EEFEC1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4E1145A1330137E00EEFEC1 /* Cocoa.framework */; };
+		B4E114651330137F00EEFEC1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B4E114631330137F00EEFEC1 /* InfoPlist.strings */; };
+		B4E114681330137F00EEFEC1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E114671330137F00EEFEC1 /* main.m */; };
+		B4E1146B1330137F00EEFEC1 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B4E114691330137F00EEFEC1 /* Credits.rtf */; };
+		B4E1146E1330137F00EEFEC1 /* ESounDSwitchAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E1146D1330137F00EEFEC1 /* ESounDSwitchAppDelegate.m */; };
+		B4E114711330137F00EEFEC1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4E1146F1330137F00EEFEC1 /* MainMenu.xib */; };
+		B4E1147A1330196900EEFEC1 /* icon-off.png in Resources */ = {isa = PBXBuildFile; fileRef = B4E114781330196900EEFEC1 /* icon-off.png */; };
+		B4E1147B1330196900EEFEC1 /* icon-on.png in Resources */ = {isa = PBXBuildFile; fileRef = B4E114791330196900EEFEC1 /* icon-on.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B4E114561330137E00EEFEC1 /* ESounDSwitch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ESounDSwitch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4E1145A1330137E00EEFEC1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		B4E1145D1330137E00EEFEC1 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		B4E1145E1330137E00EEFEC1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B4E1145F1330137E00EEFEC1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B4E114621330137F00EEFEC1 /* ESounDSwitch-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ESounDSwitch-Info.plist"; sourceTree = "<group>"; };
+		B4E114641330137F00EEFEC1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B4E114661330137F00EEFEC1 /* ESounDSwitch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ESounDSwitch-Prefix.pch"; sourceTree = "<group>"; };
+		B4E114671330137F00EEFEC1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B4E1146A1330137F00EEFEC1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		B4E1146C1330137F00EEFEC1 /* ESounDSwitchAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESounDSwitchAppDelegate.h; sourceTree = "<group>"; };
+		B4E1146D1330137F00EEFEC1 /* ESounDSwitchAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESounDSwitchAppDelegate.m; sourceTree = "<group>"; };
+		B4E114701330137F00EEFEC1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B4E114781330196900EEFEC1 /* icon-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-off.png"; sourceTree = "<group>"; };
+		B4E114791330196900EEFEC1 /* icon-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-on.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B4E114531330137E00EEFEC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4E1145B1330137E00EEFEC1 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B4E1144B1330137E00EEFEC1 = {
+			isa = PBXGroup;
+			children = (
+				B4E114771330175200EEFEC1 /* Resources */,
+				B4E114601330137E00EEFEC1 /* ESounDSwitch */,
+				B4E114591330137E00EEFEC1 /* Frameworks */,
+				B4E114571330137E00EEFEC1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B4E114571330137E00EEFEC1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B4E114561330137E00EEFEC1 /* ESounDSwitch.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B4E114591330137E00EEFEC1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4E1145A1330137E00EEFEC1 /* Cocoa.framework */,
+				B4E1145C1330137E00EEFEC1 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B4E1145C1330137E00EEFEC1 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4E1145D1330137E00EEFEC1 /* AppKit.framework */,
+				B4E1145E1330137E00EEFEC1 /* CoreData.framework */,
+				B4E1145F1330137E00EEFEC1 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		B4E114601330137E00EEFEC1 /* ESounDSwitch */ = {
+			isa = PBXGroup;
+			children = (
+				B4E1146C1330137F00EEFEC1 /* ESounDSwitchAppDelegate.h */,
+				B4E1146D1330137F00EEFEC1 /* ESounDSwitchAppDelegate.m */,
+				B4E1146F1330137F00EEFEC1 /* MainMenu.xib */,
+				B4E114611330137F00EEFEC1 /* Supporting Files */,
+			);
+			path = ESounDSwitch;
+			sourceTree = "<group>";
+		};
+		B4E114611330137F00EEFEC1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B4E114621330137F00EEFEC1 /* ESounDSwitch-Info.plist */,
+				B4E114631330137F00EEFEC1 /* InfoPlist.strings */,
+				B4E114661330137F00EEFEC1 /* ESounDSwitch-Prefix.pch */,
+				B4E114671330137F00EEFEC1 /* main.m */,
+				B4E114691330137F00EEFEC1 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B4E114771330175200EEFEC1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B4E114781330196900EEFEC1 /* icon-off.png */,
+				B4E114791330196900EEFEC1 /* icon-on.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B4E114551330137E00EEFEC1 /* ESounDSwitch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4E114741330137F00EEFEC1 /* Build configuration list for PBXNativeTarget "ESounDSwitch" */;
+			buildPhases = (
+				B4E114521330137E00EEFEC1 /* Sources */,
+				B4E114531330137E00EEFEC1 /* Frameworks */,
+				B4E114541330137E00EEFEC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ESounDSwitch;
+			productName = ESounDSwitch;
+			productReference = B4E114561330137E00EEFEC1 /* ESounDSwitch.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B4E1144D1330137E00EEFEC1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "TimeCoast Communications";
+			};
+			buildConfigurationList = B4E114501330137E00EEFEC1 /* Build configuration list for PBXProject "ESounDSwitch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B4E1144B1330137E00EEFEC1;
+			productRefGroup = B4E114571330137E00EEFEC1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B4E114551330137E00EEFEC1 /* ESounDSwitch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B4E114541330137E00EEFEC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4E114651330137F00EEFEC1 /* InfoPlist.strings in Resources */,
+				B4E1146B1330137F00EEFEC1 /* Credits.rtf in Resources */,
+				B4E114711330137F00EEFEC1 /* MainMenu.xib in Resources */,
+				B4E1147A1330196900EEFEC1 /* icon-off.png in Resources */,
+				B4E1147B1330196900EEFEC1 /* icon-on.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B4E114521330137E00EEFEC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4E114681330137F00EEFEC1 /* main.m in Sources */,
+				B4E1146E1330137F00EEFEC1 /* ESounDSwitchAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B4E114631330137F00EEFEC1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4E114641330137F00EEFEC1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B4E114691330137F00EEFEC1 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4E1146A1330137F00EEFEC1 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		B4E1146F1330137F00EEFEC1 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4E114701330137F00EEFEC1 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B4E114721330137F00EEFEC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B4E114731330137F00EEFEC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B4E114751330137F00EEFEC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ESounDSwitch/ESounDSwitch-Prefix.pch";
+				INFOPLIST_FILE = "ESounDSwitch/ESounDSwitch-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B4E114761330137F00EEFEC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ESounDSwitch/ESounDSwitch-Prefix.pch";
+				INFOPLIST_FILE = "ESounDSwitch/ESounDSwitch-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B4E114501330137E00EEFEC1 /* Build configuration list for PBXProject "ESounDSwitch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4E114721330137F00EEFEC1 /* Debug */,
+				B4E114731330137F00EEFEC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4E114741330137F00EEFEC1 /* Build configuration list for PBXNativeTarget "ESounDSwitch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4E114751330137F00EEFEC1 /* Debug */,
+				B4E114761330137F00EEFEC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B4E1144D1330137E00EEFEC1 /* Project object */;
+}
