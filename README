@@ -1,0 +1,2 @@
+OS X Menulet to start/stop esd.
+The Hostname of the esd is currently hardcoded in ESounDSwitchAppDelegate.m

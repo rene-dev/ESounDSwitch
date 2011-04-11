@@ -18,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A75AB0D213532457005401E9 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = SOURCE_ROOT; };
 		B4E114561330137E00EEFEC1 /* ESounDSwitch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ESounDSwitch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4E1145A1330137E00EEFEC1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		B4E1145D1330137E00EEFEC1 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -98,6 +99,7 @@
 		B4E114611330137F00EEFEC1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A75AB0D213532457005401E9 /* README */,
 				B4E114621330137F00EEFEC1 /* ESounDSwitch-Info.plist */,
 				B4E114631330137F00EEFEC1 /* InfoPlist.strings */,
 				B4E114661330137F00EEFEC1 /* ESounDSwitch-Prefix.pch */,
@@ -299,6 +301,7 @@
 				B4E114761330137F00EEFEC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
