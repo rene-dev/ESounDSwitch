@@ -15,6 +15,8 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     running = NO;
+    defaults = [NSUserDefaults standardUserDefaults];
+    host.stringValue = [defaults objectForKey:@"host"];
 }
 
 -(void)awakeFromNib{
@@ -26,11 +28,11 @@
     NSBundle *bundle = [NSBundle mainBundle];
     
     //Allocates and loads the images into the application which will be used for our NSStatusItem
-    menuIcon = [[NSImage alloc] initWithContentsOfFile:[bundle pathForResource:@"icon-off" ofType:@"png"]];
-    menuAlternateIcon = [[NSImage alloc] initWithContentsOfFile:[bundle pathForResource:@"icon-on" ofType:@"png"]];
+    iconOff = [[NSImage alloc] initWithContentsOfFile:[bundle pathForResource:@"icon-off" ofType:@"png"]];
+    iconOn  = [[NSImage alloc] initWithContentsOfFile:[bundle pathForResource:@"icon-on" ofType:@"png"]];
     
     //Sets the images in our NSStatusItem
-    [statusItem setImage:menuIcon];
+    [statusItem setImage:iconOff];
     
     //Tells the NSStatusItem what menu to load
     [statusItem setMenu:statusMenu];
@@ -40,29 +42,36 @@
     [statusItem setHighlightMode:YES];
 }
 
--(IBAction)switchESD:(id)sender{
+-(IBAction)toggleESD:(id)sender{
     if (!running) {
-        runSystemCommand(@"/opt/local/bin/esd -tcp -bind ::1");
+        [self runSystemCommand:@"/opt/local/bin/esd -tcp -bind ::1"];
         sleep(1);
-        runSystemCommand(@"/opt/local/bin/esdrec -s ::1 | /opt/local/bin/esdcat -s etherplay");
+        [self runSystemCommand:[NSString stringWithFormat:@"/opt/local/bin/esdrec -s ::1 | /opt/local/bin/esdcat -s %@",host.stringValue]];
         [[statusMenu itemAtIndex:0] setTitle:@"Running"];
         [[statusMenu itemAtIndex:1] setTitle:@"Stop"];
-        [statusItem setImage:menuAlternateIcon];
+        [statusItem setImage:iconOn];
         running = YES;
     } else {
-        runSystemCommand(@"killall esd");
+        [self runSystemCommand:@"killall esd"];
         [[statusMenu itemAtIndex:0] setTitle:@"Stopped"];
         [[statusMenu itemAtIndex:1] setTitle:@"Start"];
-        [statusItem setImage:menuIcon];
+        [statusItem setImage:iconOff];
         running = NO;
-    }
-   
+    }   
 }
 
-void runSystemCommand(NSString *cmd)
-{
-    [NSTask launchedTaskWithLaunchPath:@"/bin/sh"
-                              arguments:[NSArray arrayWithObjects:@"-c", cmd, nil]];
+- (IBAction)showSettings:(id)sender {
+    [[NSApplication sharedApplication] activateIgnoringOtherApps:TRUE];
+    [settingsPanel makeKeyAndOrderFront:self];
+}
+
+- (void)windowWillClose:(NSNotification *)aNotification{
+    [defaults setObject:host.stringValue forKey:@"host"];
+    [defaults synchronize];
+}
+
+- (void) runSystemCommand:(NSString *)cmd{
+    [NSTask launchedTaskWithLaunchPath:@"/bin/sh" arguments:[NSArray arrayWithObjects:@"-c", cmd, nil]];
 }
 
 @end

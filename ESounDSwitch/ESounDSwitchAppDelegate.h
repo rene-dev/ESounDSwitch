@@ -8,20 +8,23 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface ESounDSwitchAppDelegate : NSObject <NSApplicationDelegate> {
+@interface ESounDSwitchAppDelegate : NSObject <NSApplicationDelegate,NSWindowDelegate> {
 @private
     NSWindow *window;
     IBOutlet NSMenu *statusMenu;
+    IBOutlet NSPanel *settingsPanel;
+    IBOutlet NSTextField *host;
     NSStatusItem * statusItem;
-    NSImage *menuIcon;
-    NSImage *menuAlternateIcon;
-    BOOL running;
+    NSImage *iconOff;
+    NSImage *iconOn;
+    NSUserDefaults* defaults;
+    bool running;
 }
 
 @property (assign) IBOutlet NSWindow *window;
 
--(IBAction)switchESD:(id)sender;
-
-void runSystemCommand(NSString *cmd);
+- (IBAction) toggleESD:(id)sender;
+- (IBAction) showSettings:(id)sender;
+- (void) runSystemCommand:(NSString *)cmd;
 
 @end
